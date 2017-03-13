@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Header -->
+
 <head>
+
 	<title>Main Page</title>
 	
 	<meta charset="utf-8">
+
+	<!-- Resets almost all CSS styling -->
 	
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- My CSS styling -->
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
+<!-- Body -->
 
 <body>
+
+<!-- Header -->
+
 	<header>
 		<h1>Artur Solyanyk</h1>
 	</header>
+
+<!-- Nav bar with internal site links -->
 	
 	<nav>
 		<a class="sitelinks" href="#">About</a>
@@ -23,16 +37,23 @@
 		<a class="sitelinks" href="contact.html">Contact</a>
 	</nav>
 
+<!-- This wrapper was used to create proper sticky footer -->
 
 	<div class="wrapper">
+
+<!-- Bio section with picture -->
 		
 		<section >
 			<h2>About Me</h2>
 
+<!-- I don't know why I put figure tag. Don't ask me. -->
+
 			<figure class="main_img">
 				<img src="assets/images/red_heat.jpg" width="200" height="200" alt="Joker Image">
 			</figure>
-			
+
+<!-- I've made it to make it float with image above -->
+		
 				<div class="content">
 
 					<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
@@ -45,10 +66,13 @@
 
 		</section>
 
-		
+<!-- Sidebar with contact info. -->
+
 		<aside>
 			
 			<h3>Connect with Me</h3>
+
+<!-- Don't ask me why I put links in <ul> . That was the fastest way to make it "not crappy" -->
 			
 			<ul>
 				
@@ -74,12 +98,17 @@
 				
 		</aside>
 
+<!-- I don't think that this is even real clearfix . I just trying to look smart and wanna avoid headaches later . So yes , I put this here just in case you know... -->
+
 		<div class="clearfix"></div>
+
+<!-- This container is for awesome sticky footer here! -->
 
 		<div class="push"></div>
 
 	</div>
 
+<!-- The same thing , I don't want to fall apart -->
 
 		<div class="clearfix"></div>
 

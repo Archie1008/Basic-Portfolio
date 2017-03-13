@@ -5,15 +5,26 @@
 		
 		<meta charset="utf-8">
 		
+		<!-- Resets almost all CSS styling -->
+
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+		<!-- My CSS styling -->
 
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	
+		<!-- Body -->
+
 	<body>
+
+		<!-- Header -->
+
 		<header>
 			<h1>Artur Solyanyk</h1>
 		</header>
+
+		<!-- Nav bar with internal site links -->
 
 		<nav>
 		<a class="sitelinks" href="index.html">About</a>
@@ -21,11 +32,17 @@
 		<a class="sitelinks" href=contact.html>Contact</a>
 		</nav>
 
+		<!-- This wrapper was used to create proper sticky footer -->
+
 		<div class="wrapper">
+
+		<!-- This is the section with my portfolio projects -->
 		
 			<section>
 				
 				<h2>Portfolio</h2>
+
+				<!-- I decided to make it more semantic so that's why you see all this <figure>'s' and <figcaption>'s -->
 
 				<figure class="folio_img">
 					<a href="#" target="_blank">
@@ -64,11 +81,14 @@
 				
 			</section>
 
+			<!-- Sidebar with contact info. -->
 			
 			<aside>
 			
 				<h3>Connect with Me</h3>
 			
+<!-- Don't ask me why I put links in <ul> . That was the fastest way to make it "not crappy" -->
+
 				<ul>
 				
 					<li>
@@ -92,12 +112,17 @@
 				
 			</aside>
 
+			<!-- I don't think that this is even real clearfix . I just trying to look smart and wanna avoid headaches later . So yes , I put this here just in case you know... -->
+
 			<div class="clearfix"></div>
+
+			<!-- This container is for awesome sticky footer here! -->
 
 			<div class="push"></div>
 
 		</div>
 
+		<!-- The same thing , I don't want to fall apart -->
 		
 		<div class="clearfix"></div>
 

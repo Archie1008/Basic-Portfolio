@@ -28,6 +28,8 @@ nav {
 
 }
 
+/*internal site links "About and Contact*/
+
 .sitelinks {
 	display: inline-block;
 	color: #777777;
@@ -36,6 +38,8 @@ nav {
     padding: 0 10px;
 
 }
+
+/*internal site link "Portfolio" I've made it separatly to make a borders between siblings links*/
 
 .nav_borders {
 	display: inline-block;
@@ -48,15 +52,20 @@ nav {
 
 }
 
+/*use after few floats that need to be cleared and yes I know that this might be not a clearfix*/
 
 .clearfix {
 	clear: left;
 }
 
+/*This class belongs to <div> container which includes child <section> and <aside> containers in it. It was made to create a sticky footer after content*/
+
 .wrapper {
 	min-height: 100%;
 	margin-bottom: -65px;
 }
+
+/*Main section with main content nothing to extra to say*/
 
 section {
 	width: 650px;
@@ -65,6 +74,8 @@ section {
 	float:left;
 	margin: 30px 0 30px 70px;
 }
+
+/*Sidebar with links to other websites' accounts*/
 
 aside {
 	width: 270px;
@@ -75,6 +86,7 @@ aside {
 	margin: 30px 0 30px 30px;
 }
 
+/*Shortcut to give same fonts to headings*/
 
 h1,h2,h3 {
 	font-family: Georgia, Times, "Times New Roman", serif;
@@ -82,15 +94,20 @@ h1,h2,h3 {
 
 }
 
+/*<ul> with external hyperlinks to other websites it located inside <aside> container */
 
 ul{
 	list-style-type: none;
 	margin: 0 50px;
 }
 
+/*To arrange links horisontally*/
+
 li {
 	display: inline-block;
 }
+
+/*Top heading styling with Artur Solyanyk in it*/
 
 h1 {
 	background-color: #4aaaa5;
@@ -101,6 +118,8 @@ h1 {
 	padding:20px 27px;
 }
 
+/*Heading used in <section> containers */
+
 h2 {
 	color:#4aaaa5;
 	font-size: 25px;
@@ -110,6 +129,8 @@ h2 {
 
 }
 
+/*Heading for <aside> container*/
+
 h3 {
 	color: #4aaaa5;
 	text-align: center;
@@ -117,6 +138,8 @@ h3 {
 	padding: 25px 0;
 	margin: 0 30px 30px 30px;
 	border-bottom: 1px solid #dddddd;
+
+/*Main portfolio img*/
 
 }
 
@@ -126,10 +149,13 @@ h3 {
 	margin: 0 0 0 70px;
 }
 
+/*This class is a <div> container which has my bio in it . Includes <p> tags.*/
+
 .content {
 	margin: 20px 70px 20px 70px;
 }
 
+/*Footer,footer,fooooooter,fooooter don't waste your time go down*/
 
 footer {
 	background-color:#666666;
@@ -141,11 +167,15 @@ footer {
 	font-size: 12px;
 }
 
+/*Portfolio images I've made one class for them*/
+
 .folio_img {
 	float: left;
 	margin: 30px 0 30px 83.3px;
 
 }
+
+/*Caption for portfolio images ,do not thank me */
 
 figcaption {
 	margin-top: -60px;
@@ -156,14 +186,19 @@ figcaption {
 	color: #ffffff;
 }
 
+/*Yes I don't want this shitty decorations*/
+
 a {
 	text-decoration:none; 
 }
+
+/*Form styling for contact.html*/
 
 form {
 	margin: 0 0 0 70px;
 }
 
+/*Stuff inside a <form> from above */
 
 input {
 	width: 510px; 
@@ -173,10 +208,13 @@ input {
 	color: #777777;
 }
 
+/*I wanted placeholders inside <input> tags to disappear when clicking on inside of it*/
+
 input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
 
+/*Text area inside the <form> from above ,defines the Message area*/
 
 textarea {
 	width: 510px;
@@ -188,11 +226,13 @@ textarea {
 	
 }
 
+/*I wanted placeholder inside <textarea> tag to disappear when clicking on inside of it*/
 
 textarea:focus::-webkit-input-placeholder {
     opacity: 0;
 }
 
+/*Submit button from contact.html*/
 
 .submit {
 	background-color: #4aaaa5; 
@@ -203,21 +243,29 @@ textarea:focus::-webkit-input-placeholder {
 	margin-bottom: 20px;
 }
 
+/*Added nice styling when "Submit" button is clicked*/
+
 .submit:active {
 	outline: 2px solid #dddddd;
 	color:#dddddd;
 }
+
+/*When you highlight the areas on the portfolio it does it with green color instead of blue*/
 
 ::selection {
     background: #4aaaa5;
     color:white;
 }
 
+/*When I set the sticky footer up the body was pushing my text to the right to fix it I put this awesome solution here*/
+
 footer p{
 	position: absolute;
 	right: 0;
 	left:0;
 }
+
+/*Class .push is a <div> container inside the <div class="wrapper">it was made with a sole purpose to prevent footer from collapsing with .wrapper. The footer height was defined with the same purpose ...I guess.*/
 
 footer , .push {
 	height: 60px;
