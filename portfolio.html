@@ -18,23 +18,31 @@
 
 	<body>
 
+<!-- This wrapper was used to create proper sticky footer -->
+
+<div class="wrapper">
+
 		<!-- Header -->
 
 		<header>
-			<h1>Artur Solyanyk</h1>
+			<div class="header">
+		
+				<h1>Artur Solyanyk</h1>
+
+				<!-- Nav bar with internal site links -->
+	
+				<nav>
+					<a class="sitelinks" href="index.html">About</a>
+					<a class="nav_borders" href="#">Portfolio</a>
+					<a class="sitelinks" href="contact.html">Contact</a>
+				</nav>
+			</div>
+
 		</header>
 
-		<!-- Nav bar with internal site links -->
-
-		<nav>
-		<a class="sitelinks" href="index.html">About</a>
-		<a class="nav_borders" href="#">Portfolio</a>
-		<a class="sitelinks" href=contact.html>Contact</a>
-		</nav>
-
-		<!-- This wrapper was used to create proper sticky footer -->
-
-		<div class="wrapper">
+		<!-- Main content container -->
+		
+		<main>
 
 		<!-- This is the section with my portfolio projects -->
 		
@@ -47,35 +55,35 @@
 				<figure class="folio_img">
 					<a href="#" target="_blank">
 						<img src="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200" alt="200x200 image">
-						<figcaption>Hangman</figcaption>
+						<p class="figcaption">Hangman</p>
 					</a>
 				</figure>
 
 				<figure class="folio_img"> 
 					<a href="#" target="_blank">
 					<img src="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200" alt="200x200 image">
-					<figcaption>RPG Game</figcaption>
+					<p class="figcaption">RPG Game</p>
 					</a>
 				</figure>
 
 				<figure class="folio_img">
 					<a href="#" target="_blank">
 					<img src="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200" alt="200x200 image">
-					<figcaption>Trivia Game</figcaption>
+					<p class="figcaption">Trivia Game</p>
 					</a>
 				</figure>
 
 				<figure class="folio_img">
 					<a href="#" target="_blank">
 					<img src="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200" alt="200x200 image">
-					<figcaption>Rutgers Info Widget</figcaption>
+					<p class="figcaption">Rutgers Info Widget</p>
 					</a>
 				</figure>
 
 				<figure class="folio_img">
 					<a href="#" target="_blank">
 					<img src="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200" alt="200x200 image">
-					<figcaption>Rock Paper Scissors</figcaption>
+					<p class="figcaption">Rock Paper Scissors</p>
 					</a>
 				</figure>
 				
@@ -112,6 +120,8 @@
 				
 			</aside>
 
+		</main>	
+
 			<!-- I don't think that this is even real clearfix . I just trying to look smart and wanna avoid headaches later . So yes , I put this here just in case ,you know... -->
 
 			<div class="clearfix"></div>
@@ -120,7 +130,7 @@
 
 			<div class="push"></div>
 
-		</div>
+</div> <!-- wrapper -->
 
 		<!-- The same thing , I don't want it to fall apart -->
 		

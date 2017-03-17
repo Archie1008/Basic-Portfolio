@@ -1,5 +1,4 @@
 html , body {
-	width:1100px;
 	height: 100%;
     background-image: url("../images/concrete_seamless.png");
     background-color: #cccccc;
@@ -8,23 +7,44 @@ html , body {
 	margin: auto;
 }
 
-header {
-	background-color:#ffffff;
-	border-bottom: 2px solid #cccccc;
-	width: 720px;
-	height: 65px;
-	float: left;
+/*It was made to create a sticky footer after content*/
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -65px ;
 
 }
 
-nav {
-	float:left;
-	width: 380px;
-	height: 15px;
-	padding: 25px 0;
+header {
 	background-color:#ffffff;
 	border-bottom: 2px solid #cccccc;
+	height: 65px;
+
+}
+
+.header {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*Top heading styling with Artur Solyanyk in it*/
+
+h1 {
+	background-color: #4aaaa5;
+	color: #ffffff;
 	text-align: center;
+	font-size: 25px;
+	padding:20px 70px;
+	float: left;
+}
+
+nav {
+	height: 15px;
+	padding: 25px 0 25px 375px;
+	text-align: center;
+	float: left;
+	background-color:#ffffff;
+	border-bottom: 2px solid #cccccc;
 
 }
 
@@ -58,21 +78,21 @@ nav {
 	clear: left;
 }
 
-/*This class belongs to <div> container which includes child <section> and <aside> containers in it. It was made to create a sticky footer after content*/
 
-.wrapper {
-	min-height: 100%;
-	margin-bottom: -65px;
+
+/*Main section with main content nothing to else to say*/
+
+main {
+	margin: 0 auto;
+	width: 960px;
 }
-
-/*Main section with main content nothing to extra to say*/
 
 section {
 	width: 650px;
 	background-color: #ffffff;
 	border:1px solid #dddddd;
 	float:left;
-	margin: 30px 0 30px 70px;
+	margin: 30px 0 30px 0;
 }
 
 /*Sidebar with links to other websites' accounts*/
@@ -107,16 +127,6 @@ li {
 	display: inline-block;
 }
 
-/*Top heading styling with Artur Solyanyk in it*/
-
-h1 {
-	background-color: #4aaaa5;
-	color: #ffffff;
-	text-align: center;
-	margin:0 316px 0 70px;
-	font-size: 25px;
-	padding:20px 27px;
-}
 
 /*Heading used in <section> containers */
 
@@ -149,6 +159,12 @@ h3 {
 	margin: 0 0 0 70px;
 }
 
+/*paragraphs adjustments on the index.html page*/
+
+.content p {
+	line-height: 1.3;
+}
+
 /*This class is a <div> container which has my bio in it . Includes <p> tags.*/
 
 .content {
@@ -175,9 +191,9 @@ footer {
 
 }
 
-/*Caption for portfolio images ,do not thank me */
+/*Caption for portfolio images */
 
-figcaption {
+.figcaption {
 	margin-top: -60px;
 	background-color: #4aaaa5;
 	text-align: center;
@@ -218,7 +234,7 @@ input:focus::-webkit-input-placeholder {
 
 textarea {
 	width: 510px;
-	height: 140px;
+	height: 200px;
 	padding: 5px 0;
 	border:2px solid #dddddd;
 	outline-style:none;
@@ -270,3 +286,4 @@ footer p{
 footer , .push {
 	height: 60px;
 }
+
